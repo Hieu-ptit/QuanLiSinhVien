@@ -1,0 +1,69 @@
+01-11-2020 23:57:34.654 INFO  [restartedMain] com.example.demo.DemoApplication - Starting DemoApplication on hieu-HP-Notebook with PID 27040 (/home/hieu/IdeaProjects/TTC-Solution/demo/build/classes/java/main started by hieu in /home/hieu/IdeaProjects/TTC-Solution/demo)
+01-11-2020 23:57:34.663 INFO  [restartedMain] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+01-11-2020 23:57:34.705 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01-11-2020 23:57:34.705 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01-11-2020 23:57:35.337 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+01-11-2020 23:57:35.388 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 44ms. Found 1 JPA repository interfaces.
+01-11-2020 23:57:35.899 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+01-11-2020 23:57:35.906 INFO  [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+01-11-2020 23:57:35.906 INFO  [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+01-11-2020 23:57:35.958 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01-11-2020 23:57:35.958 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1252 ms
+01-11-2020 23:57:36.014 ERROR [restartedMain] com.zaxxer.hikari.HikariConfig - Failed to load driver class com.mysql.cj.jdbc.Driver from HikariConfig class classloader sun.misc.Launcher$AppClassLoader@18b4aac2
+01-11-2020 23:57:36.017 WARN  [restartedMain] org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'inMemoryDatabaseShutdownExecutor' defined in class path resource [org/springframework/boot/devtools/autoconfigure/DevToolsDataSourceAutoConfiguration.class]: Unsatisfied dependency expressed through method 'inMemoryDatabaseShutdownExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'dataSource' defined in class path resource [org/springframework/boot/autoconfigure/jdbc/DataSourceConfiguration$Hikari.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.zaxxer.hikari.HikariDataSource]: Factory method 'dataSource' threw exception; nested exception is org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource
+01-11-2020 23:57:36.020 INFO  [restartedMain] org.apache.catalina.core.StandardService - Stopping service [Tomcat]
+01-11-2020 23:57:36.032 INFO  [restartedMain] org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+01-11-2020 23:57:36.037 ERROR [restartedMain] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under '' to com.zaxxer.hikari.HikariDataSource:
+
+    Property: driver-class-name
+    Value: com.mysql.cj.jdbc.Driver
+    Origin: "driverClassName" from property source "source"
+    Reason: Failed to load driver class com.mysql.cj.jdbc.Driver in either of HikariConfig class loader or Thread context classloader
+
+Action:
+
+Update your application's configuration
+
+01-11-2020 23:58:04.782 INFO  [restartedMain] com.example.demo.DemoApplication - Starting DemoApplication on hieu-HP-Notebook with PID 27143 (/home/hieu/IdeaProjects/TTC-Solution/demo/build/classes/java/main started by hieu in /home/hieu/IdeaProjects/TTC-Solution/demo)
+01-11-2020 23:58:04.785 INFO  [restartedMain] com.example.demo.DemoApplication - No active profile set, falling back to default profiles: default
+01-11-2020 23:58:04.845 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+01-11-2020 23:58:04.845 INFO  [restartedMain] org.springframework.boot.devtools.env.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+01-11-2020 23:58:05.595 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+01-11-2020 23:58:05.667 INFO  [restartedMain] org.springframework.data.repository.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62ms. Found 1 JPA repository interfaces.
+01-11-2020 23:58:06.292 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 9090 (http)
+01-11-2020 23:58:06.301 INFO  [restartedMain] org.apache.catalina.core.StandardService - Starting service [Tomcat]
+01-11-2020 23:58:06.302 INFO  [restartedMain] org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.39]
+01-11-2020 23:58:06.370 INFO  [restartedMain] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+01-11-2020 23:58:06.371 INFO  [restartedMain] org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
+01-11-2020 23:58:06.539 INFO  [restartedMain] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+01-11-2020 23:58:06.596 INFO  [task-1] org.hibernate.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+01-11-2020 23:58:06.671 INFO  [task-1] org.hibernate.Version - HHH000412: Hibernate ORM core version 5.4.22.Final
+01-11-2020 23:58:06.671 WARN  [restartedMain] org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+01-11-2020 23:58:06.827 INFO  [task-1] org.hibernate.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+01-11-2020 23:58:07.023 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+01-11-2020 23:58:07.151 INFO  [restartedMain] org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer - LiveReload server is running on port 35729
+01-11-2020 23:58:07.194 INFO  [restartedMain] org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 9090 (http) with context path ''
+01-11-2020 23:58:07.197 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Triggering deferred initialization of Spring Data repositories…
+01-11-2020 23:58:07.456 INFO  [task-1] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+01-11-2020 23:58:07.471 INFO  [task-1] org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+01-11-2020 23:58:08.322 INFO  [task-1] org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+01-11-2020 23:58:08.333 INFO  [task-1] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+01-11-2020 23:58:08.537 INFO  [restartedMain] org.springframework.data.repository.config.DeferredRepositoryInitializationListener - Spring Data repositories initialized!
+01-11-2020 23:58:08.551 INFO  [restartedMain] com.example.demo.DemoApplication - Started DemoApplication in 4.245 seconds (JVM running for 5.212)
+01-11-2020 23:58:08.556 INFO  [restartedMain] com.example.demo.DemoApplication - An INFO Message
+01-11-2020 23:58:08.556 WARN  [restartedMain] com.example.demo.DemoApplication - A WARN Message
+01-11-2020 23:58:08.556 ERROR [restartedMain] com.example.demo.DemoApplication - An ERROR Message
+01-11-2020 23:58:36.117 INFO  [SpringContextShutdownHook] org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+01-11-2020 23:58:36.120 INFO  [SpringContextShutdownHook] org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+01-11-2020 23:58:36.124 INFO  [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+01-11-2020 23:58:36.133 INFO  [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
