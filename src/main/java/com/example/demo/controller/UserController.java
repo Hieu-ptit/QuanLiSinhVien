@@ -6,6 +6,7 @@ import com.example.demo.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @RestController
@@ -15,6 +16,7 @@ public class UserController {
     @Autowired
     private UserService service;
 
+    private List<User> users = new ArrayList<User>();
     @GetMapping
     public List<User> read() {
         return service.read();
@@ -25,8 +27,13 @@ public class UserController {
         return service.create(userCreate);
     }
 
-    @DeleteMapping
-    public String create(@PathVariable("/{id}") int id ) {
+    @PutMapping("/{id}")
+    public String Update(@PathVariable("id") int id,@RequestBody User user){
+        return service.Update(id,user);
+    }
+
+    @DeleteMapping("/{id}")
+    public String delete(@PathVariable("id") int id ) {
         return service.delete(id);
     }
 
